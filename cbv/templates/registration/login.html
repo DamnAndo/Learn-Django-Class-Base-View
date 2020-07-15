@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome</title>
+    <title>Login Form</title>
 </head>
 <body>
-    <h1>Welcome</h1>
-    <form  method="POST">
+    <form method="POST">
         {% csrf_token %}
-        <input type="submit" value="Submit" />
+        {{ form.as_p }}
+        <input type="submit" value="Login" />
     </form>
 </body>
 </html>
